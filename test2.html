@@ -10,11 +10,13 @@
     <script>
         if (navigator.language) {
             var language = navigator.language;
+            var languages = navigator.languages;
+            document.write('主要语言：'+language+'，曾设：'+languages);
         } else {
             var language = navigator.browserLanguage;
+            document.write(language)
         }
-
-        document.write(language)
+        console.log(navigator)
     </script>
 </head>
 
